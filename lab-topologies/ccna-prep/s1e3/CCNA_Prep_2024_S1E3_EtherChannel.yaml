@@ -898,7 +898,7 @@ nodes:
           !
           ! Setup spanning-tree
           spanning-tree mode rapid
-          spanning-tree vlan 1-4096 priority 49152
+          spanning-tree vlan 1-4094 priority 49152
           !
           ! Create VLANs
           vlan 10
