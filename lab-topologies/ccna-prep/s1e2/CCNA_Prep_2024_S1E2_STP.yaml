@@ -1689,7 +1689,7 @@ lab:
 
     <pre>
     DLS1(config)# <b>interface G0/3</b>
-    DLS1(config-if)# <b>spanning-tree portfast trunk </b>
+    DLS1(config-if)# <b>spanning-tree portfast edge trunk </b>
     %Warning: portfast should only be enabled on ports connected to a single
      host. Connecting hubs, concentrators, switches, bridges, etc... to this
      interface  when portfast is enabled, can cause temporary bridging loops.
