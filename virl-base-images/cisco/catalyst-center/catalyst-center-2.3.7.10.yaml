@@ -1,0 +1,11 @@
+id: catalyst-center-2.3.7.10
+label: Cisco Catalyst Center 2.3.7.10
+description: |2
+  Cisco Catalyst Center
+  2.3.7.10
+node_definition_id: catalyst-center
+disk_image: catc_disk1.qcow2
+disk_image_2: catc_disk2.qcow2
+disk_image_3: catc_disk3.qcow2
+read_only: false
+schema_version: "0.0.1"

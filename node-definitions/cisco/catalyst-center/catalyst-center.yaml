@@ -1,0 +1,52 @@
+id: catalyst_center
+general:
+  description: Cisco Catalyst Center (formerly DNA Center)
+  nature: server
+  read_only: false
+device:
+  interfaces:
+    has_loopback_zero: false
+    physical:
+      - eth0
+    serial_ports: 1
+ui:
+  visible: true
+  description: Cisco Catalyst Center
+  label_prefix: catc-
+  icon: server
+  label: CatalystCenter
+sim:
+  linux_native:
+    libvirt_domain_driver: kvm
+    driver: server
+    disk_driver: sata
+    ram: 262144
+    cpus: 32
+    cpu_limit: 100
+    nic_driver: vmxnet3
+    boot_disk_size: 100
+    data_volume: 0
+    video:
+      model: vga
+      memory: 4
+    efi_boot: false
+boot:
+  timeout: 86400
+  uses_regex: false
+inherited:
+  image:
+    ram: true
+    cpus: true
+    cpu_limit: true
+    data_volume: true
+    boot_disk_size: true
+  node:
+    ram: true
+    cpus: true
+    cpu_limit: true
+    data_volume: true
+    boot_disk_size: true
+configuration:
+  generator:
+    driver: null
+schema_version: 0.0.1
